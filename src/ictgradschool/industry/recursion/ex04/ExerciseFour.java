@@ -10,8 +10,11 @@ public class ExerciseFour {
      */
     public int getSum(int num) {
 
-        // TODO Implement a recursive solution to this method.
-        return 0;
+        // TODOne Implement a recursive solution to this method.
+        if(num>1){
+            return num + getSum(num-1);
+        }
+        return 1;
 
     }
 
@@ -25,8 +28,11 @@ public class ExerciseFour {
      */
     public int getSmallest(int[] nums, int firstIndex, int secondIndex) {
 
-        // TODO Implement a recursive solution to this method.
-        return 0;
+        // TODOne Implement a recursive solution to this method.
+        if(firstIndex<secondIndex){
+            return Math.min(nums[firstIndex],getSmallest(nums,firstIndex+1,secondIndex));
+        }
+        return Math.min(nums[firstIndex],nums[secondIndex]);
     }
 
     /**

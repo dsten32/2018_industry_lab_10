@@ -59,10 +59,10 @@ public class TestExerciseFour {
     @Test
     public void testGetSmallest() {
 
-        assertEquals(-23, ex.getSmallest(new int[] { 3, -4, -23, 745}, 0, 4));
-        assertEquals(10, ex.getSmallest(new int[] { 10, 11, 12, 13, 14, 15}, 0, 6));
-        assertEquals(100, ex.getSmallest(new int[] { 104, 103, 102, 101, 100}, 0, 5));
-        assertEquals(-4, ex.getSmallest(new int[] { 1869, 21, -4, 1000000, -3}, 0, 5));
+        assertEquals(-23, ex.getSmallest(new int[] { 3, -4, -23, 745}, 0, 3));
+        assertEquals(10, ex.getSmallest(new int[] { 10, 11, 12, 13, 14, 15}, 0, 5));
+        assertEquals(100, ex.getSmallest(new int[] { 104, 103, 102, 101, 100}, 0, 4));
+        assertEquals(-4, ex.getSmallest(new int[] { 1869, 21, -4, 1000000, -3}, 0, 4));
 
     }
 
