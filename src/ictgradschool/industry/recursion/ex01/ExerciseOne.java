@@ -56,8 +56,8 @@ public class ExerciseOne {
             shapeList.add(s);
         }
 
-        // TODO Complete this Comparator, which should order shapes by their number of sides (ascending order),
-        // TODO THEN by area (descending order).
+        // TODOne Complete this Comparator, which should order shapes by their number of sides (ascending order),
+        // TODOne THEN by area (descending order).
         Comparator<Shape> shapeComparator = new Comparator<Shape>() {
             @Override
             public int compare(Shape o1, Shape o2) {
@@ -73,7 +73,7 @@ public class ExerciseOne {
             }
         };
 
-        // TODO Sort shapeList using the Collections.sort method and shapeComparator
+        // TODOne Sort shapeList using the Collections.sort method and shapeComparator
 Collections.sort(shapeList, shapeComparator);
 
         // Print out the result. Do not edit below this line.

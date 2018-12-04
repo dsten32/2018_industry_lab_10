@@ -3,7 +3,7 @@ package ictgradschool.industry.recursion.ex01;
 /**
  * Represents a Shape.
  *
- * TODO Make this class implement the Comparable&lt;Shape&gt; interface
+ * TODOne Make this class implement the Comparable&lt;Shape&gt; interface
  */
 public abstract class Shape implements Comparable{
 
@@ -43,7 +43,7 @@ public abstract class Shape implements Comparable{
 
     }
 
-    // TODO Implement the compareTo method, which should order shapes by their perimeter, in ascending order.
+    // TODOne Implement the compareTo method, which should order shapes by their perimeter, in ascending order.
 
     @Override
     public int compareTo(Object o) {
