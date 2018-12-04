@@ -5,7 +5,9 @@ package ictgradschool.industry.recursion.ex01;
  *
  * TODO Make this class implement the Comparable&lt;Shape&gt; interface
  */
-public abstract class Shape {
+public abstract class Shape implements Comparable{
+
+
 
     public abstract double getArea();
 
@@ -43,4 +45,13 @@ public abstract class Shape {
 
     // TODO Implement the compareTo method, which should order shapes by their perimeter, in ascending order.
 
+    @Override
+    public int compareTo(Object o) {
+        if (o instanceof Shape){
+            Shape other= (Shape)o;
+
+            return (int)(this.getPerimeter()-other.getPerimeter());
+        }
+        return 0;
+    }
 }
