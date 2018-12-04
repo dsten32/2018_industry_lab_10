@@ -29,10 +29,10 @@ public class ExerciseFour {
     public int getSmallest(int[] nums, int firstIndex, int secondIndex) {
 
         // TODOne Implement a recursive solution to this method.
-        if(firstIndex<secondIndex){
+        if(firstIndex<secondIndex-1){
             return Math.min(nums[firstIndex],getSmallest(nums,firstIndex+1,secondIndex));
         }
-        return Math.min(nums[firstIndex],nums[secondIndex]);
+        return Math.min(nums[firstIndex],nums[secondIndex-1]);
     }
 
     /**
@@ -41,7 +41,8 @@ public class ExerciseFour {
     public void printNums1(int n) {
 
         // TODO Implement a recursive solution to this method.
-        System.out.println("Not implemented.");
+
+        System.out.println("fin");
     }
 
     /**
