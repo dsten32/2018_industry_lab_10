@@ -40,9 +40,11 @@ public class ExerciseFour {
      */
     public void printNums1(int n) {
 
-        // TODO Implement a recursive solution to this method.
-
-        System.out.println("fin");
+        // TODOne Implement a recursive solution to this method.
+        if(n>0){
+            System.out.println(String.valueOf(n));
+            printNums1(n-1);
+        }
     }
 
     /**
@@ -61,7 +63,14 @@ public class ExerciseFour {
      */
     public int countEs(String input) {
 
-        // TODO Implement a recursive solution to this method.
+        // TODOne Implement a recursive solution to this method.
+        if(input.length()!=0){
+            if(input.charAt(0)=='e' || input.charAt(0)=='E'){
+                return 1 + countEs(input.substring(1));
+            } else if (input.charAt(0)!='e' && input.charAt(0)!='E') {
+                return countEs(input.substring(1));
+            }
+        }
         return 0;
     }
 
@@ -71,6 +80,8 @@ public class ExerciseFour {
     public int fibonacci(int n) {
 
         // TODO Implement a recursive solution to this method.
+
+
         return 0;
     }
 
@@ -81,8 +92,14 @@ public class ExerciseFour {
      */
     public boolean isPalindrome(String input) {
 
-        // TODO Implement a recursive solution to this method.
-        return false;
+        // TODOne Implement a recursive solution to this method.
+        if (input.length() <= 1) {
+            return true;
+        } else if (input.charAt(0) != input.charAt(input.length()-1)) {
+            return false;
+        } else {
+            return isPalindrome(input.substring(1, input.length() - 1));
+        }
     }
 
 }
