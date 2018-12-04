@@ -53,7 +53,10 @@ public class ExerciseFour {
     public void printNums2(int n) {
 
         // TODO Implement a recursive solution to this method.
-        System.out.println("Not implemented.");
+        if(n>0){
+            System.out.println(String.valueOf(n));
+            printNums2(n-1);
+        }
     }
 
     /**
@@ -79,10 +82,14 @@ public class ExerciseFour {
      */
     public int fibonacci(int n) {
 
-        // TODO Implement a recursive solution to this method.
+        // TODOne Implement a recursive solution to this method.
+        if (n>1){
+            return fibonacci(n-1)+fibonacci(n-2);
+//            fibonacci(n-1);
+        }
 
 
-        return 0;
+        return n;
     }
 
     /**
